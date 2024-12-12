@@ -1,0 +1,64 @@
+/* General result page container styling */
+.result-page {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Light background to match with the rest of the UI */
+}
+
+/* Main heading styling */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for contrast */
+    font-weight: bold;
+}
+
+/* Container for holding candidate cards */
+.results-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Styling for each candidate card */
+.candidate-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for candidate cards */
+.candidate-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Candidate name styling */
+.candidate-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Consistent with the rest of the text */
+}
+
+/* Candidate description or additional info */
+.candidate-card p {
+    font-size: 18px;
+    color: #555; /* Lighter shade for additional info */
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .candidate-card {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0;
+    }
+}

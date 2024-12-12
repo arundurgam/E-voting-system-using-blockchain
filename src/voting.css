@@ -1,0 +1,140 @@
+/* Main container for the voting section */
+.voting-container {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* List of candidates displayed in a column */
+.candidates-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Individual candidate container */
+.candidate {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    flex-direction: column; /* Arrange items (logo and text) in a column */
+    width: 100%;
+    max-width: 400px;
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: white;
+    text-align: center; /* Center the text */
+}
+
+
+/* Hover effect for candidate boxes */
+.candidate:hover {
+    transform: scale(1.02);
+}
+
+/* Details section for candidate information */
+.candidate-details {
+    display: flex;
+    align-items: center;
+    color: rgb(237, 91, 13);
+}
+
+/* Candidate logo image styling */
+.candidate-logo {
+   display: flex;
+    width: 40px;
+    height: 50px;
+    padding-top: 0px;
+    margin-left: 48px;
+    margin-right: 15px;
+    margin-bottom: 8PX;
+    margin-top: 8PX;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    object-fit: cover;
+}
+
+/* Button styling */
+button {
+    padding: 5px 10px; /* Reduced button size */
+    font-size: 14px; /* Smaller font size for buttons */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Disabled button styling */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Specific styles for BJP candidates */
+.bjp-candidate {
+    border: 2px solid #e48321;
+    background-color: #e86316;
+    color: white;
+}
+
+/* Specific styles for Congress candidates */
+.congress-candidate {
+    
+    background-color: #21d83c;
+    border: 2px solid #e48321;
+    color: white;
+}
+
+/* Specific button styles for each party */
+.bjp-button {
+    background-color: #ff9900;
+    color: white;
+}
+
+.bjp-button:hover {
+    background-color: #e68a00;
+}
+
+.congress-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.congress-button:hover {
+    background-color: #c82333;
+}
+.candidate-vote {
+    display: block;
+    margin-left:10px ;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+/* New style for replacing text with images */
+.bjp-candidate img,
+.congress-candidate img {
+    width: 100px; /* Set the size of the images */
+    height: auto;
+}
+
+/* Adjust the voting button size */
+button {
+    padding: 8px 16px; /* Reduce the padding of the button */
+    font-size: 14px;   /* Reduce the font size */
+}
